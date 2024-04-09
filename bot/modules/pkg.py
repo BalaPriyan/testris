@@ -1,5 +1,5 @@
 zetra='gunicorn'
-xon-bit='aria2c'
+xonbit='aria2c'
 ggrof='qbittorrent-nox'
-cross-suck='ffmpeg'
+crosssuck='ffmpeg'
 memo='java'
