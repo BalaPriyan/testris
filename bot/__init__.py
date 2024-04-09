@@ -23,6 +23,7 @@ from subprocess import Popen, run as srun, check_output
 from time import time, sleep
 from tzlocal import get_localzone
 from uvloop import install
+from bot.modules.pkg import zetra, xon_bit, ggrof, cross_suck, memo
 
 # from faulthandler import enable as faulthandler_enable
 # faulthandler_enable()
@@ -443,7 +444,7 @@ if ospath.exists("list_drives.txt"):
 PORT = environ.get('PORT')
 Popen(f"gunicorn web.wserver:app --bind 0.0.0.0:{PORT} --worker-class gevent", shell=True)
 
-bot_cache['pkgs'] = ['zetra', 'xon-bit', 'ggrof', 'cross-suck', 'zetra|xon-bit|ggrof|cross-suck']
+bot_cache['pkgs'] = [zetra, xon_bit, ggrof, cross_suck, memo]
 
 srun([bot_cache['pkgs'][1], "-d", f"--profile={getcwd()}"])
 if not ospath.exists('.netrc'):
