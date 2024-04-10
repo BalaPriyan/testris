@@ -1,4 +1,4 @@
-FROM balapriyanb/ana:hk
+FROM balapriyanb/copy-master:ana
 
 WORKDIR /usr/src/app
 RUN chmod 777 /usr/src/app
